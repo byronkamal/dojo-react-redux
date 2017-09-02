@@ -1,0 +1,50 @@
+{
+  "name": "dojo-react-redux",
+  "version": "0.0.1",
+  "description": "dojo",
+  "main": "index.js",
+  "repository": "git@github.com:tulioc/react_starter_materialize.git",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^*",
+    "babel-eslint": "^*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "^*",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx": "0.0.2",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "axios-fileupload": "0.0.1",
+    "babel-preset-stage-1": "*",
+    "css-loader": "^0.28.4",
+    "google-map-react": "^0.24.0",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.18.7",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "react-file-uploader": "^0.3.3",
+    "react-files": "^2.4.3",
+    "react-google-maps": "^5.1.0",
+    "react-redux": "^4.4.6",
+    "react-router": "^3.0.3",
+    "react-router-dom": "^4.1.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.0.4",
+    "redux-promise": "^0.5.1",
+    "redux-thunk": "^*",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2"
+  }
+}
