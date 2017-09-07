@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import StarterReducer from './starter-reducer';
+import MovieDataReducer from './movie_data_reducer';
 
 const rootReducer = combineReducers({
-  starter: StarterReducer
+  movieData: MovieDataReducer,
 });
 
 export default rootReducer;

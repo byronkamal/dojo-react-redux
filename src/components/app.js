@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import StarterContainer from '../containers/starter-container';
+import MoviePage from '../containers/movie_page';
 
-
-
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <div>
-        <StarterContainer />
+        <MoviePage />
       </div>
     );
   }
 }
+
+export default App;
