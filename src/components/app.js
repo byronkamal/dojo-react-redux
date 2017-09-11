@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import MoviePage from '../containers/movie_page';
+import AdressData from '../containers/adress_data';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <MoviePage />
-      </div>
+        <AdressData />
     );
   }
 }
