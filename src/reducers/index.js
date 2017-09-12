@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import MovieDataReducer from './movie_data_reducer';
+import ArtistDataReducer from './artist_data_reducer';
 
 const rootReducer = combineReducers({
-  movieData: MovieDataReducer,
+  artistData: ArtistDataReducer,
 });
 
 export default rootReducer;

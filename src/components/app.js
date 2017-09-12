@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import MoviePage from '../containers/movie_page';
+import ArtistPage from '../containers/artist_page';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <MoviePage />
+        <ArtistPage />
       </div>
     );
   }
