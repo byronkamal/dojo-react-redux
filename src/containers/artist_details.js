@@ -28,9 +28,11 @@ class ArtistDetails extends Component {
         <div>
           <h2>{artist.name}</h2>
           <ul className="collection">
-            <li className="collection-item">Contador de Plays: { artist.stats.playcount }</li>
-            <li className="collection-item">Ouvintes: {artist.stats.listeners}</li>
-            <li className="collection-item">Artista: { artist.name }</li>
+            <li className="collection-item">Playcont: { artist.stats.playcount }</li>
+            <li className="collection-item">Listeners: {artist.stats.listeners}</li>
+            <li className="collection-item">Artist: { artist.name }</li>
+            <li className="collection-item">Last FM URL: { artist.url }</li>
+            <li className="collection-item">Biography: { artist.bio.summary }</li>
           </ul>
         </div>
       );
