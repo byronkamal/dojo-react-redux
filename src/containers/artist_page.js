@@ -22,14 +22,13 @@ class ArtistPage extends Component {
     return (
       <div>
         <div>
-          <nav className = "black">
+          <nav className = "deep-purple darken-4">
             <div className="nav-wrapper">
-              <a href="#!" className="brand-logo">LAST FM </a>
+                <a href="#!" className="brand-logo">FoundSound</a>
               <ul className="right hide-on-med-and-down">
-              <li><a className="waves-effect waves-dark btn"
-              onClick={() => this.fetchData()}>
-              Obter Informações
-              </a></li>
+              <li><i href="#!" className="material-icons">play_circle_outline</i></li>
+              <li><a className="btn-flat disabled" onClick={() => this.fetchData()}>
+              Obter Informações</a></li>
               </ul>
             </div>
           </nav>

@@ -27,6 +27,8 @@ class ArtistDetails extends Component {
       return (
         <div>
           <h2>{artist.name}</h2>
+          <img src = {artist.image[1]}></img>
+
           <ul className="collection">
             <li className="collection-item">Playcont: { artist.stats.playcount }</li>
             <li className="collection-item">Listeners: {artist.stats.listeners}</li>
@@ -37,7 +39,7 @@ class ArtistDetails extends Component {
         </div>
       );
     } else {
-      return <div>Aguardando resultado! </div>;
+      return <div>Wating...</div>;
     }
 
   }
