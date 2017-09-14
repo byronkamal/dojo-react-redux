@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './components/helloworld.js'
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import App from './components/app';
+import reducers from './reducers';
+import promise from 'redux-promise';
 
+const createStoreWithMiddleware = applyMiddleware(
+  promise
+)(createStore);
 
-
-const App = ()=>{
-    return <Hello />;
-};
-
-
-//Take the component generated HTM and put it om the page
-ReactDOM.render(<App />, document.getElementById('container'));
+ReactDOM.render(
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <App />
+  </Provider>
+, document.getElementById('container'));
