@@ -1,13 +1,12 @@
 import axios from 'axios';
-const API_KEY = '944416b7';
 
-export const FETCH_MOVIE_DATA = 'FETCH_MOVIE_DATA';
+export const FETCH_CEP_DATA = 'FETCH_CEP_DATA';
 
-export function fetchMovieData(imdbKey) {
-  const request = axios.get(`http://www.omdbapi.com/?i=${imdbKey}&apikey=${API_KEY}`);
+export function fetchCepData(cepId){
+  const request = axios.get(`https://viacep.com.br/ws/${cepId}/json/`);
 
   return {
-    type: FETCH_MOVIE_DATA,
+    type: FETCH_CEP_DATA,
     payload: request,
   }
 }

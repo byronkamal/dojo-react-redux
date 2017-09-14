@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchMovieData } from '../actions/index';
-import MovieDetails from './movie_details';
+import { fetchCepData } from '../actions/index';
+import CepDetails from './cep_details';
 
-class MoviePage extends Component {
+class CepPage extends Component {
 
   constructor(props) {
     super(props);
@@ -11,7 +11,7 @@ class MoviePage extends Component {
   }
 
   fetchData() {
-    this.props.fetchMovieData(this.state.searchParams);
+    this.props.fetchCepData(this.state.searchParams);
   }
 
   onChangeSearchParams(inputValue) {
@@ -33,7 +33,7 @@ class MoviePage extends Component {
             </input>
             <a className="waves-effect waves-light btn-large"
                 onClick={() => this.fetchData()}>
-              Puxar dados!
+              Buscar CEP!
             </a>
           </div>
           <div className="col s4">
@@ -45,7 +45,7 @@ class MoviePage extends Component {
             <br/>
           </div>
           <div className="col s4">
-            <MovieDetails />
+            <CepDetails />
           </div>
           <div className="col s4">
             <br/>
@@ -58,8 +58,8 @@ class MoviePage extends Component {
 
 function mapStateToProps(state) {
   return {
-    movieData: state.movieData,
+    cepData: state.cepData,
   };
 }
 
-export default connect(mapStateToProps, { fetchMovieData })(MoviePage);
+export default connect(mapStateToProps, { fetchCepData })(CepPage);
