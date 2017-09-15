@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchMovieData } from '../actions/index';
-import MovieDetails from './movie_details';
+import { browserHistory } from 'react-router';
 
-class MoviePage extends Component {
+class SearchMovie extends Component {
 
   constructor(props) {
     super(props);
@@ -45,7 +45,7 @@ class MoviePage extends Component {
             <br/>
           </div>
           <div className="col s4">
-            <MovieDetails />
+            <br />
           </div>
           <div className="col s4">
             <br/>
@@ -62,4 +62,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, { fetchMovieData })(MoviePage);
+export default connect(mapStateToProps, { fetchMovieData })(SearchMovie);
